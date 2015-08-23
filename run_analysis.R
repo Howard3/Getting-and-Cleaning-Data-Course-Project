@@ -62,7 +62,7 @@ run_analysis <- function() {
   final_table <- mutate(final_table, activity=activity_labels[activity]$activity)
   
   print('writing tidy data set')
-  write.csv(final_table, "tidy_data.csv")
+  write.table(final_table, "tidy_data.txt", row.name=FALSE)
   
   return(final_table)
 }

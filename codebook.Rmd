@@ -1,5 +1,10 @@
+---
+output: 
+  html_document: 
+    keep_md: yes
+---
 ```{r echo=FALSE}
-data <- read.csv("tidy_data.csv")
+data <- read.table("tidy_data.txt", header=TRUE)
 ```
 
 ## Generation from the UCI HAR Dataset
